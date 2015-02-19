@@ -1,0 +1,25 @@
+{
+  "name": "gpiotest",
+  "version": "1.0.0",
+  "description": "raspberry pi gpio test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bnhovde/pi-gpio-api.git"
+  },
+  "keywords": [
+    "raspberry",
+    "pi",
+    "gpio",
+    "js"
+  ],
+  "author": "bard n hovde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bnhovde/pi-gpio-api/issues"
+  },
+  "homepage": "https://github.com/bnhovde/pi-gpio-api"
+}
