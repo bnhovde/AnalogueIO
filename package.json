@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/bnhovde/pi-gpio-api/issues"
   },
-  "homepage": "https://github.com/bnhovde/pi-gpio-api"
+  "homepage": "https://github.com/bnhovde/pi-gpio-api",
+  "dependencies": {
+    "onoff": "^1.0.2",
+    "pi-gpio": "0.0.6"
+  }
 }
