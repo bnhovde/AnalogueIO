@@ -38,11 +38,11 @@ $ bower install
 
 ### Wiring it up
 
-Download Arduino IDE if you haven't already and connect your Arduino via the USB cable
-Open Arduino IDE and open the standard firmata by clicking: File > Examples > Firmata > StandardFirmata
-Pick your Arduino variant (e.g. Arduino Uno) via Tools > Board
-Select the port for your board via Tools > Serial Port
-Upload the program by clicking File > Upload
+- Download Arduino IDE if you haven't already and connect your Arduino via the USB cable
+- Open Arduino IDE and open the standard firmata by clicking: File > Examples > Firmata > StandardFirmata
+- Pick your Arduino variant (e.g. Arduino Uno) via Tools > Board
+- Select the port for your board via Tools > Serial Port
+- Upload the program by clicking File > Upload
 
 All you need to do next is connect your input device to the arduino's analogue input port (number 0). 
 This is described in great detail here: http://node-ardx.org/exercises/8
