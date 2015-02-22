@@ -22,8 +22,7 @@ var analogueIO = analogueIO || {};
         console.log('initialising!');
 
         // Attach modules
-        analogueIO.App.prototype.listener = new analogueIO.Listener();
-        // analogueIO.App.prototype.moduleB = new analogueIO.ModuleB();
+        analogueIO.App.prototype.joystick = new analogueIO.Joystick();
 
     };
 

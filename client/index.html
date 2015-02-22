@@ -71,8 +71,8 @@
             // Initialise app 
             var app = new analogueIO.App({ "something" : "here" });
 
-            // Listen for socket updates
-            app.listener.listen("#inputval");
+            // Create new controller
+            app.joystick.control( "#joystick", 100, 900 );
           
         })(jQuery, window, document);
     </script>

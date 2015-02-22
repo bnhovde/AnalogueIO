@@ -2,7 +2,7 @@
   "name": "AnalogueIO",
   "version": "0.0.1",
   "description": "Analogue controller input to js api",
-  "main": "app.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
