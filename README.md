@@ -28,7 +28,13 @@ This is built for an internal project where a collection of physical controller 
 - Windows SDK (Only for Windows)
 
 ### Installation
-- Run npm install and bower install
+
+```sh
+$ sudo npm install
+```
+```sh
+$ bower install
+```
 
 ### Wiring it up
 
