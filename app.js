@@ -1,6 +1,8 @@
 var five = require("johnny-five"),
     board,
-    myPotentiometer;
+    myPotentiometer,
+    threshold = 5,
+    val1 = 0;
 
 board = new five.Board();
 board.on("ready", function() {
@@ -10,7 +12,12 @@ board.on("ready", function() {
     });
 
     myPotentiometer.on("read", function() {
-        var rawValue = this.raw;
-        console.log(rawValue);
+        var newVal = this.raw;
+
+        // Check if value has changed (and above threshold)
+        if ( newVal > val1 + threshold || newVal < val1 - threshold ) {
+            val1 = newVal;
+            console.log(val1);
+        }
     });
 });
