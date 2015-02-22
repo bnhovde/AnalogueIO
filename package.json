@@ -1,29 +1,28 @@
 {
-  "name": "gpiotest",
-  "version": "1.0.0",
-  "description": "raspberry pi gpio test",
+  "name": "AnalogueIO",
+  "version": "0.0.1",
+  "description": "Analogue controller input to js api",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnhovde/pi-gpio-api.git"
+    "url": "https://github.com/bnhovde/AnalogueIO.git"
   },
   "keywords": [
-    "raspberry",
-    "pi",
-    "gpio",
-    "js"
+    "arduino",
+    "js",
+    "node",
+    "johhny-five"
   ],
   "author": "bard n hovde",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bnhovde/pi-gpio-api/issues"
+    "url": "https://github.com/bnhovde/AnalogueIO/issues"
   },
-  "homepage": "https://github.com/bnhovde/pi-gpio-api",
+  "homepage": "https://github.com/bnhovde/AnalogueIO",
   "dependencies": {
-    "onoff": "^1.0.2",
-    "pi-gpio": "0.0.6"
+    "johnny-five": "^0.8.43"
   }
 }
