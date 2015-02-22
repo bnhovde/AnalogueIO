@@ -19,6 +19,8 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+    <script src='//localhost:3000/socket.io/socket.io.js'></script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -30,7 +32,7 @@
     </header>
 
     <main>
-        <p>Value of input: <span id="js-inputval"></span></p>
+        <p>Value of input: <span id="inputval"></span></p>
     </main>
 
 
@@ -52,6 +54,19 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/listener.js"></script>
         <!-- endbuild -->
+
+    <script>
+        (function($, window, document, undefined) {
+  
+            // Initialise app 
+            var app = new analogueIO.App({ "something" : "here" });
+
+            // Listen for socket updates
+            app.listener.listen("#inputval");
+          
+        })(jQuery, window, document);
+    </script>
 </body>
 </html>
