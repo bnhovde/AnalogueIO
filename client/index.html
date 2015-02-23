@@ -36,7 +36,7 @@
         <p>Value of input: <span id="inputval"></span></p>
 
         <div class="demo-container">
-            <div class="demo-container__joystick" id="joystick"></div>
+            <div class="demo-container__joystick" id="joystick1"></div>
             <div class="demo-container__base"></div>
         </div>
 
@@ -61,18 +61,28 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <script src="scripts/helpers.js"></script>
+        <script src="scripts/controller.js"></script>
         <script src="scripts/listener.js"></script>
+        <script src="scripts/joystick1.js"></script>
+        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
     <script>
         (function($, window, document, undefined) {
-  
-            // Initialise app 
-            var app = new analogueIO.App({ "something" : "here" });
 
-            // Create new controller
-            app.joystick.control( "#joystick", 100, 900 );
+            // Initialise app 
+            analogueIO.app = new analogueIO.App({ "something" : "here" });
+
+            // Create joystick
+            var joystick1 = new analogueIO.Joystick("#joystick1");
+
+            // Create controller for joystick 1
+            var joystick1controller = new analogueIO.Controller( 100, 900, -30, 30, joystick1.update );
+
+            // Attach listener for joystick 1
+            var joystick1listener = new analogueIO.Listener( "update", joystick1controller)
+
           
         })(jQuery, window, document);
     </script>
